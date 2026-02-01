@@ -13,16 +13,16 @@
 
     /* Header met achtergrondafbeelding */
     header {
-      background-image: url('91833044-0b6a-4117-8c5f-86fe87605696.png');
+      background-image: url('European-oakwood.png'); /* aangepaste afbeelding */
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 60px 20px;
+      padding: 100px 20px; /* iets hoger voor een betere uitstraling */
       text-align: center;
       position: relative;
     }
 
-    /* Optionele donkere overlay zodat tekst beter zichtbaar is */
+    /* Optionele overlay zodat tekst beter zichtbaar is */
     header::before {
       content: "";
       position: absolute;
@@ -30,7 +30,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.0); /* pas aan voor donkerder/licht */
+      background-color: rgba(0,0,0,0.3); /* lichte donkere overlay */
       z-index: 0;
     }
 
@@ -50,64 +50,3 @@
     }
 
     footer {
-      background-color: #ddd;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>PMN houtbewerking</h1>
-  <p>Handgemaakte houten creaties</p>
-</header>
-
-<!-- Over mij -->
-<section>
-  <h2>Over mij</h2>
-  <p>Welkom op mijn website! Ik maak houten producten en houtsnijwerk met de hand. Dit doe ik vooral hobby-matig en ik vind het erg leuk om te doen, daarom wil ik hier een aantal van mijn creaties laten zien.</p>
-</section>
-
-<!-- Mijn werk + afbeelding -->
-<section>
-  <div style="display: flex; align-items: flex-start;">
-
-    <!-- Tekst links -->
-    <div>
-      <h2>Mijn werk</h2>
-      <ul>
-        <li>Houten producten</li>
-        <li>Snijwerk</li>
-        <li>Af en toe custom projecten</li>
-      </ul>
-    </div>
-
-    <!-- Afbeelding iets naar rechts -->
-    <div style="margin-left: 180px;">
-      <img src="550f2f38-3e54-47ff-8a8f-886f60ee9cfc.jpg"
-           width="300"
-           style="border-radius: 10px;">
-    </div>
-
-  </div>
-</section>
-
-<!-- Status -->
-<section>
-  <h2>Status</h2>
-  <p>Op dit moment neem ik geen opdrachten aan.</p>
-</section>
-
-<!-- Contact -->
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:paulmnagtegaal@gmail.com">paulmnagtegaal@gmail.com</a></p>
-</section>
-
-<footer>
-  <p>© 2026 PMN houtbewerking</p>
-</footer>
-
-</body>
-</html>
