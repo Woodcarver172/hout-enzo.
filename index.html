@@ -11,13 +11,11 @@
       padding: 0;
     }
     header {
-  urlbackground-image: url('images/live-edge-wood_2600x.jpg'); /* pad naar je afbeelding */
-  background-size: cover;   /* afbeelding vult het hele element */
-  background-position: center; /* afbeelding mooi gecentreerd */
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+      background-color: #6b4f2a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
     section {
       padding: 20px;
     }
@@ -28,18 +26,6 @@
       background-color: #ddd;
       text-align: center;
       padding: 10px;
-    }
-    /* Flex container voor tekst + afbeelding */
-    .work-section {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      flex-wrap: wrap; /* voor mobiel */
-    }
-    .work-section img {
-      max-width: 300px;
-      border-radius: 10px;
-      height: auto;
     }
   </style>
 </head>
@@ -58,8 +44,8 @@
 </section>
 
 <!-- Mijn werk + afbeelding -->
-<section style="margin-bottom: 50px;">
-  <div class="work-section">
+<section style="position: relative; margin-bottom: 50px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start;">
     
     <!-- Tekst links -->
     <div>
@@ -71,16 +57,18 @@
       </ul>
     </div>
 
-    <!-- Afbeelding rechts -->
+    <!-- Afbeelding rechts, 30,0 cm van de rand -->
     <div>
-      <img src="c253dcf0-21de-4e63-ab06-29f571ada1b9.png" alt="Houten patroon">
+      <img src="550f2f38-3e54-47ff-8a8f-886f60ee9cfc.jpg" 
+           width="300" 
+           style="position: absolute; right: 300px; top: 0; border-radius: 10px;">
     </div>
 
   </div>
 </section>
 
 <!-- Status -->
-<section style="margin-bottom: 50px;"> 
+<section style="margin-bottom: 50px;"> <!--zelfde margin-bottom als boven--> 
   <h2>Status</h2>
   <p>Op dit moment neem ik geen opdrachten aan.</p>
 </section>
